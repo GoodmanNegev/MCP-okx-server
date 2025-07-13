@@ -2,6 +2,7 @@
 
 ## 简介
 本项目为 OKX 交易所的 MCP 服务端示例，基于 FastMCP 框架实现，支持账户余额、行情、K线查询及下单等功能。
+请在使用前配置key.env中的API密钥信息
 
 ## 环境准备
 1. 安装 [uv](https://github.com/astral-sh/uv)：
@@ -54,6 +55,11 @@ pip install mcp[cli]
 ```bash
 mcp dev main.py
 ```
+
+在调试页面选择sse，端口号配置为8000  （即main.py运行的端口）
+使用session token ，connect成功后
+在tools 标签页进行调试
+
 
 ## 主要 MCP 工具
 - get_balance：查询账户余额
